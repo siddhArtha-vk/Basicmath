@@ -1,299 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basicmath</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header><h2>Basicmath</h2></header>
-    
-    <nav>
-        <button onclick="showPage('introduction')"><b>Introduction</b></button>
-        <button onclick="showPage('mathematics')"><b>Mathematics</b></button>
-        <button onclick="showPage('notes')"><b>Notes</b></button>
-    </nav>
+<header>
+    <h2>Basicmath</h2>
+</header>
 
-    <div class="content" id="content">
-      <div id="introduction" class="page">
-        <div class="card">
-            <h3>Introduction</h3>
-            <p>Welcome to Basicmath — a personal journey through the world of mathematics.</p>
-            <p>This website is a carefully curated collection of mathematical ideas, concepts, and theories that I have studied from Class 6 to Class 12. From the fundamentals of arithmetic and algebra to the depths of calculus, coordinate geometry, and statistics, each topic is presented in a clear and concise way to make learning intuitive and engaging.</p>
-            <p>The goal of this platform is not just to summarize textbooks, but to build a structured understanding of mathematics — connecting concepts across different levels and showing how they evolve over time. Whether you are a student looking for revision, a beginner seeking clarity, or simply someone who enjoys mathematics, this site aims to make complex ideas simpler and more accessible.</p>
-        </div>
-      </div>
-      
-      <div id="mathematics" class="page" style="display:none;">
-        <div class="card">
-            <h3>Mathematics</h3>
-            <p>Mathematics is a field of study that discovers and organizes methods, theories, and theorems that are developed and proved for the needs of empirical science and mathematics itself.</p>
-            <p>Mathematics can be classified into following two types</p>
-            <details>
-                <summary><b>Pure Mathematics</b></summary>
-                <p>This branch focuses on understanding mathematical ideas, patterns, and structures for their own sake. It is more about theory, logic, and abstraction than direct real-world application.</p>
-                <p>Pure mathesmatics can be divided into two major parts:</p>
-                <details style="margin-left: 10px;">
-                    <summary><b>Discrete Mathematics</b></summary>
-                    <p>Discrete mathematics deals with separate, countable objects. It does not involve continuous change but rather distinct values.</p>
-                    <p>It includes:</p>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Arithmetic</b></summary>
-                    <p>This is where everything begins. Beyond basic operations, deeper arithmetic studies:</p>
-                        <ul>
-                            <li>Divisibility rules</li>
-                            <li>Prime numbers</li>
-                            <li>Modular arithmetic (clock math)</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Boolean Algebra</b></summary>
-                    <p>This is the math of true/false values.</p>
-                        <ul>
-                            <li>Built on logical operations: AND, OR, NOT</li>
-                            <li>Foundation of digital circuits and programming</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Set Theory</b></summary>
-                    <p>This is the language of all mathematics.</p>
-                        <ul>
-                            <li>Defines collections (sets), subsets, unions, intersections</li>
-                            <li>Builds the foundation for functions, numbers, and structures</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Combinatorics</b></summary>
-                    <p>This is the art of counting cleverly.</p>
-                        <ul>
-                            <li><b>Permutation</b></li>
-                            <li><b>Combination</b></li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Logic</b></summary>
-                    <p>Logic studies valid reasoning.</p>
-                        <ul>
-                            <li>Propositions and truth values</li>
-                            <li>Proof techniques (direct, contradiction, induction)</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Number Theory</b></summary>
-                    <p>Often called the “queen of mathematics.”</p>
-                        <ul>
-                            <li>Studies integers and their properties</li>
-                            <li>Topics: primes, divisibility, Diophantine equations</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Graph Theory</b></summary>
-                    <p>Studies networks.</p>
-                        <ul>
-                            <li>Vertices (points) and edges (connections)</li>
-                            <li>Paths, cycles, connectivity</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Discrete Statistics</b></summary>
-                    <p>Deals with countable data.</p>
-                        <ul>
-                            <li>Examples: number of students, number of defects</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Algorithms</b></summary>
-                    <p>Step-by-step methods to solve problems.</p>
-                        <ul>
-                            <li>Efficiency (time, memory)</li>
-                            <li>Sorting, searching, optimization</li>
-                        </ul>
-                    </details>
-                    <br>
-                </details>
-                <details style="margin-left: 10px;">
-                    <summary><b>Continuous Mathematics</b></summary>
-                    <p>Continuous mathematics deals with smooth, continuous quantities, such as space, motion, and change.</p>
-                    <p>It includes:</p>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Linear Algebra</b></summary>
-                    <p>The math of space and direction.</p>
-                        <ul>
-                            <li>Vectors &#8594; quantities with direction</li>
-                            <li>Matrices &#8594; transformations</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Abstract (Modern) Algebra</b></summary>
-                    <p>Studies structures and symmetry.</p>
-                        <ul>
-                            <li>Groups &#8594; symmetry operations</li>
-                            <li>Rings & fields &#8594; number systems</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Geometry</b></summary>
-                    <p>Study of space and shape.</p>
-                        <ul>
-                            <li><b>Euclidean Geometry</b></li>
-                            <li><b>Non-Euclidean Geometry</b></li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Topology</b></summary>
-                    <p>Known as “rubber-sheet geometry.”</p>
-                        <ul>
-                            <li>Focuses on properties unchanged by stretching</li>
-                            <li>A coffee cup and donut are equivalent here</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Trigonometry</b></summary>
-                    <p>Study of angles and periodic behavior.</p>
-                        <ul>
-                            <li>Sine, cosine, tangent</li>
-                            <li>Wave patterns</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Calculus</b></summary>
-                    <p>The math of change and accumulation.</p>
-                        <ul>
-                            <li><b>Differential Calculus</b> &#8594; rates of change</li>
-                            <li><b>Integral Calculus</b> &#8594; total accumulation</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Continuous Statistics</b></summary>
-                    <p>Deals with continuous data.</p>
-                        <ul>
-                            <li>Heights, weights, time</li>
-                            <li>Probability distributions</li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Analysis</b></summary>
-                    <p>The rigorous foundation of calculus.</p>
-                        <ul>
-                            <li><b>Real Analysis</b></li>
-                            <li><b>Complex Analysis</b></li>
-                        </ul>
-                    </details>
-                    <details style="margin-left: 10px;">
-                    <summary><b>Measure Theory</b></summary>
-                    <p>Defines what “size” really means.</p>
-                        <ul>
-                            <li>Generalizes length, area, volume</li>
-                            <li>Foundation of probability theory</li>
-                        </ul>
-                    </details>
-                </details>
-                <br>
-            </details>
-            <details>
-                <summary><b>Applied Mathematics</b></summary>
-                <p>Applied mathematics focuses on using mathematical methods to solve real-world problems.</p>
-                <p>It includes:</p>
-                <details style="margin-left: 10px;">
-                <summary><b>Elementary/Basic Algebra</b></summary>
+<nav>
+    <a href="#introduction"><b>Introduction</b></a>
+    <a href="#mathematics"><b>Mathematics</b></a>
+    <a href="#notes"><b>Notes</b></a>
+</nav>
+
+<div class="content">
+
+    <!-- INTRODUCTION -->
+    <section id="introduction" class="card">
+        <h3>Introduction</h3>
+        <p>Welcome to Basicmath — a personal journey through the world of mathematics.</p>
+        <p>This website is a carefully curated collection of mathematical ideas from Class 6 to Class 12.</p>
+        <p>The goal is to build a structured understanding of mathematics and make complex ideas simpler.</p>
+    </section>
+
+    <!-- MATHEMATICS -->
+    <section id="mathematics" class="card">
+        <h3>Mathematics</h3>
+        <p>Mathematics is a field that develops logical structures, theories, and methods.</p>
+
+        <details>
+            <summary><b>Pure Mathematics</b></summary>
+            <p>Focuses on theory, logic, and abstraction.</p>
+
+            <details style="margin-left:20px;">
+                <summary><b>Discrete Mathematics</b></summary>
                 <ul>
-                    <li>Solving equations</li>
-                    <li>Working with functions</li>
+                    <li>Arithmetic</li>
+                    <li>Boolean Algebra</li>
+                    <li>Set Theory</li>
+                    <li>Combinatorics</li>
+                    <li>Logic</li>
+                    <li>Number Theory</li>
+                    <li>Graph Theory</li>
+                    <li>Algorithms</li>
                 </ul>
-                </details>
-                <details style="margin-left: 10px;">
-                <summary><b>Statistics</b></summary>
-                <p>The science of data.</p>
-                    <ul>
-                        <li>Collecting, organizing, analyzing</li>
-                        <li>Making predictions</li>
-                    </ul>
-                </details>
-                <details style="margin-left: 10px;">
-                <summary><b>Probability</b></summary>                   
-                <p>The math of uncertainty.</p>
-                    <ul>
-                        <li>Likelihood of events</li>
-                        <li>Random variables</li>
-                    </ul>
-                </details>
-                <details style="margin-left: 10px;">
-                <summary><b>Mechanics</b></summary>
-                    <p>Studies the motion of objects and the forces acting on them.</p>
-                    <details style="margin-left: 10px;">
-                        <summary><b>Statics</b></summary>
-                        <p>Studies objects at rest or in equilibrium.</p>
-                    </details>
-                    <details style="margin-left: 10px;">
-                        <summary><b>Dynamics</b></summary>
-                            <p>Studies objects in motion under forces. It has two parts:</p>
-                            <details style="margin-left: 10px;">
-                            <summary><b>Kinematics</b></summary>
-                            <p>Describes motion only (position, velocity, acceleration)</p>
-                            </details>
-                            <details style="margin-left: 10px;">
-                            <summary><b>Kinetics</b></summary>
-                            <p>Studies motion along with forces causing it</p>
-                            </details>
-                    </details>
-                </details>
-                <details style="margin-left: 10px;">
-                <summary><b>Computational Mathematics</b></summary>
-                <p>Solving math problems using numerical methods.</p>
-                    <ul>
-                        <li>Approximation instead of exact solutions</li>
-                        <li>Algorithms for large systems</li>
-                    </ul>
-                </details>
-                <details style="margin-left: 10px;">
-                <summary><b>Mathematical Physics</b></summary>
-                <p>Applies math directly to physical laws</p>
-                    <ul>
-                        <li>Differential equations</li>
-                        <li>Field theory</li>
-                    </ul>
-                </details>
             </details>
-            <br>
-            <b>Intermediate Algebra</b>
-            <p>Intermediate algebra lies between basic and advanced mathematics which includes:</p>
-            <ul>
-                <li>Functions</li>
-                <li>Sequence and series</li>
-                <li>Quadratic equations</li>
-                <li>Comoplex numbers</li>
-            </ul>
-            <p>This acts as a bridge connecting elementary concepts to higher-level mathematics</p>
-        </div>
-      </div>
 
-      <div id="notes" class="page" style="display:none;">
-        <div class="card">
-            <h3>Notes</h3>
-            <ul>
-                <li><a href="assets/math11.html"><b>Mathematics 11</b></a></li>
-                <li><a href="assets/math12.html"><b>Mathematics 12</b></a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+            <details style="margin-left:20px;">
+                <summary><b>Continuous Mathematics</b></summary>
+                <ul>
+                    <li>Linear Algebra</li>
+                    <li>Geometry</li>
+                    <li>Topology</li>
+                    <li>Trigonometry</li>
+                    <li>Calculus</li>
+                    <li>Analysis</li>
+                </ul>
+            </details>
+        </details>
 
-    <script>
-    function showPage(pageId) {
-        let pages = document.getElementsByClassName("page");
-        for (let p of pages) {
-            p.style.display = "none";
-        }
-        document.getElementById(pageId).style.display = "block";
-    }
-    </script>
-    
-    <footer>
-        <p>© 2026 Basicmath</p>
-    </footer>
+        <br>
+
+        <details>
+            <summary><b>Applied Mathematics</b></summary>
+            <ul>
+                <li>Statistics</li>
+                <li>Probability</li>
+                <li>Mechanics</li>
+                <li>Computational Mathematics</li>
+                <li>Mathematical Physics</li>
+            </ul>
+        </details>
+    </section>
+
+    <!-- NOTES -->
+    <section id="notes" class="card">
+        <h3>Notes</h3>
+        <ul>
+            <li><a href="assets/math11.html"><b>Mathematics 11</b></a></li>
+            <li><a href="assets/math12.html"><b>Mathematics 12</b></a></li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Basicmath</p>
+</footer>
+
 </body>
 </html>
