@@ -54,7 +54,7 @@
   <h1>Unit 1 : Algebra</h1>
   </center>
   <h2>Chapter 1 - Logic, Sets and Real Number System</h2>
-  <div class="index">
+  <div>
     <ol>
       <li>Logic</li>
       <ol type="a">
@@ -348,11 +348,11 @@
   <p><hr></p>
   <b style="background-color: yellow;">#Review of Set</b>
   <p><b>Set and Its Notation</b><br>Set is the collection of well-defined objects. Each object of a set is called an element or member of the set.<br>Sets are usually denoted by capital letters such as A, B, X, Y, etc.</p>
-  <p><b>Membership of a Set</b><br>\( \in \) &#8594; ‘belongs to’ or ‘is an element’ or ‘is the member of’<br> \( \not\in \) &#8594; ‘does not belong to’ or ‘is not the element of’</p>
+  <p><b>Membership of a Set</b><br>\( \in \) &#8594; 'belongs to' or 'is an element' or 'is the member of'<br> \( \not\in \) &#8594; 'does not belong to' or 'is not the element of'</p>
   <p style="margin-bottom: 5px;"><b>Special Types of Set</b></p>
   <table>
     <tr>
-      <td style="width: 140px;"><b>Empty/null/void set</b></td>
+      <td style="vertical-align: top; text-align: left; width: 140px;"><b>Empty/null/void set</b></td>
       <td>A set having no element is called the empty set or null set or avoid set. It is denoted by the Greek letter \( \phi \) (phi) or { }.</td>
     </tr>
     <tr>
@@ -365,6 +365,171 @@
     </tr>
   </table>
   <p><hr></p>
+  <p style="margin-bottom: 5px;"><b>Relation between Sets</b></p>
+      <table>
+        <tr>
+          <td style="vertical-align: top; text-align: left; width: 145px;"><b>Subset and Superset</b></td>
+          <td>A set \( \text{A} \) is said to be a subset of the set \( \text{B} \) if every element of \( \text{A} \) is also an element of \( \text{B} \). This relation is denoted by \( \text{A} \subseteq \text{B} \).<br>
+            Here, \( \text{B} \) is called the superset of \( \text{A} \) and we write it as \( \text{B} \supseteq \text{A} \)<br>
+            If every element of set \( \text{A} \) is also an element of set \( \text{B} \) but there is at least one element of \( \text{B} \) which is not an element of \( \text{A} \), then \( \text{A} \) is known as the proper subset of \( \text{B} \). This relation is denoted by \( \text{A} \subset \text{B} \).
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Equal sets</b></td>
+          <td>Two sets \( \text{A} \) and \( \text{B} \) are said to be equal or identical or same if they have the same elements. They are denoted \( \text{A} = \text{B} \). If \( \text{A} \subseteq \text{B} \) and \( \text{B} \subseteq \text{A} \) then \( \text{A} = \text{B} \).</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Intersecting sets</b></td>
+          <td>Two sets \( \text{A} \) and \( \text{B} \) are said to be intersecting if they have at least one element in common.</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Disjoint sets</b></td>
+          <td>Two sets \( \text{A} \) and \( \text{B} \) are said to be disjoint if they have no elements in common.</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Power set</b></td>
+          <td>The collection or the set of all possible subsets of a set is called its power set. Power set of a set \( \text{A} \) is denoted by \( \text{P}(\text{A}) \) or \( 2^{\text{A}} \).</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Universal set</b></td>
+          <td>Universal set is the set which contains all the sets under discussion. It is denoted by \( \text{U} \).</td>
+        </tr>
+      </table>
+      <p><hr></p>
+      <p style="margin-bottom: 5px;"><b>Venn Diagram</b></p>
+      <div style="display: flex; border: 0px;">
+        <div style="border: 0px;">
+          <p>The diagrammatic representation of sets, set relations and set operations, is known as a venn diagram. It consists of a universal set \( \text{U} \) represented by a reactangle, subsets of \( \text{U} \) by the closed curves and the elements of the sets by the points withnin the closed curve.</p>
+          <p>E.g., The Venn-diagram of \( \text{A} = \{ a, b, c, d, e \} \) and \( \text{B} = \{ a, e, i, o, u \} \) is present alongside.</p>
+        </div>
+        <div style="border: 0px;">
+          <img src="images/venn-diagram.png" width="300px;">
+        </div>
+      </div>
+      <p style="margin-bottom: 5px;"><b>Operations on Sets</b></p>
+      <table>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Union</b></td>
+          <td>The union of two sets \( \text{A} \) and \( \text{B} \) is defined as the set of all elements which belong to \( \text{A} \) or \( \text{B} \) or both. Symbolically, \( \text{A} \cup \text{B} = \{ x: x \in \text{A} \) or \( x \in \text{B} \} \) <br>
+            \( x \in ( \text{A} \cup \text{B} ) \Rightarrow x \in \text{A} \) or \( x \in \text{B} \) <br>
+            \( x \not\in ( \text{A} \cup \text{B} ) \Rightarrow x \not\in \text{A} \) and \( x \not\in \text{B} \)
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Intersection</b></td>
+          <td>The intersection of two sets \( \text{A} \) and \( \text{B} \) is the set of all elements belonging to both sets \( \text{A} \) and \( \text{B} \). Symbolically, \( \text{A} \cap \text{B} = \{ x: x \in \text{A} \) and \( x \in \text{B} \} \) <br>
+            \( x \in ( \text{A} \cap \text{B} ) \Rightarrow x \in \text{A} \) and \( x \in \text{B} \) <br>
+            \( x \not\in ( \text{A} \cap \text{B} ) \Rightarrow x \not\in \text{A} \) or \( x \not\in \text{B} \)
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Difference</b></td>
+          <td>The difference of two sets \( \text{A} \) and \( \text{B} \) is the set of all elements of \( \text{A} \) not belonging to \( \text{B} \).<br>
+            Symbolically, \( \text{A} - \text{B} = \{ x: x \in \text{A} \) and \( x \not\in \text{B} \} \)<br>
+            <b style="color: white;">Symbolically, </b>\( \text{B} - \text{A} = \{ x: x \in \text{B} \) and \( x \not\in \text{A} \} \)
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Complement</b></td>
+          <td>The complement of a set \( \text{A} \) is the set of all elements in the universal set \( \text{U} \) that do not belong to \( \text{A} \). Symbolically, \( \overline{\text{A}} = \{ x: x \in \text{U} \) and \( x \not\in \text{A} \} \)<br>
+            \( x \in \overline{\text{A}} \Rightarrow x \not\in \text{A} \)<br>
+            \( x \in \text{A} \Rightarrow x \not\in \overline{\text{A}} \)
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left; width: 160px;"><b>Symmetric Difference</b></td>
+          <td>The union of the differences \( \text{A} - \text{B} \) and \( \text{B} - \text{A} \) of two sets \( \text{A} \) and \( \text{B} \) is the called the symmetric difference of \( \text{A} \) and \( \text{B} \) i.e. \( \text{A } \Delta \text{ B} = ( \text{A} - \text{B} ) \cup ( \text{B} - \text{A} ) \).<br>
+            Symbolically, \( \text{A } \Delta \text{ B} = \{ x: x \in (\text{A} - \text{B}) \) or  \( x \in (\text{B} - \text{A}) \)<br>
+            \( x \in (\text{A } \Delta \text{ B}) \Rightarrow x \in \text{A} \) or \( x \in \text{B} \) but \( x \not\in (\text{A} \cap \text{B}) \)
+          </td>
+        </tr>
+      </table>
+      <p><hr></p>
+      <p><b style="background-color: yellow;">#Theorems based on Set Operation</b></p>
+      <table>
+        <tr>
+          <td>
+            <b>Properties of Inclusion and Equality Relations</b>
+            <ol>
+              <li>\( \text{A} \subseteq \text{B}, \text{B} \subseteq \text{C} \Rightarrow \text{A} \subseteq \text{C} \)</li>
+              <li>\( \text{A} = \text{B} \Rightarrow \text{B} = \text{A} \)</li>
+              <li>\( \text{A} = \text{B}, \text{B} = \text{C} \Rightarrow \text{A} = \text{C} \)</li>
+              <li>\( \text{A} \subseteq \phi \Rightarrow \text{A} = \phi \)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Properties of Unions</b>
+            <ol>
+              <li>\( \text{A} \cup \text{A} = \text{A} \)</li>
+              <li>\( \text{A} \cup \phi = \text{A} \)</li>
+              <li>\( \text{A} \cup \text{U} = \text{U} \)</li>
+              <li>\( \text{A} \cup \text{B} = \phi \Rightarrow \text{A} = \phi \) and \( \text{B} = \phi \)</li>
+              <li>\( \text{A} \cup \text{B} = \text{B} \cup \text{A} \)</li>
+              <li>\( ( \text{A} \cup \text{B} ) \cup \text{C} = \text{A} \cup ( \text{B} \cup \text{C} ) \)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Properties of Intersections</b>
+            <ol>
+              <li>\( \text{A} \cap \text{A} = \text{A} \)</li>
+              <li>\( \text{A} \cap \phi = \phi \)</li>
+              <li>\( \text{A} \cap \text{U} = \text{A} \)</li>
+              <li>\( \text{A} \cap \text{B} = \phi \Rightarrow \text{A} = \phi \) and \( \text{B} = \phi \)</li>
+              <li>\( \text{A} \cap \text{B} = \text{B} \cap \text{A} \)</li>
+              <li>\( ( \text{A} \cap \text{B} ) \cap \text{C} = \text{A} \cap ( \text{B} \cap \text{C} ) \)</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Miscellaneous Properties</b><br>
+            <ol>
+              <li>Simple Distributive Laws</li>
+              <ol type="a">
+                <li>\( \text{A} \cup ( \text{B} \cap \text{C} ) = ( \text{A} \cup \text{B} ) \cap ( \text{A} \cup \text{C} ) \)</li>
+                <li>\( \text{A} \cap ( \text{B} \cup \text{C} ) = ( \text{A} \cap \text{B} ) \cup ( \text{A} \cap \text{C} ) \)</li>
+              </ol>
+              <li>Complement Laws</li>
+              <ol type="a">
+                <li>\( \text{A} \cup \overline{\text{A}} = \text{U} \)</li>
+                <li>\( \text{A} \cap \overline{\text{A}} = \phi \)</li>
+                <li>\( \overline{\overline{\text{A}}} = \text{A} \)</li>
+              </ol>
+              <li>De-Morgan's Law</li>
+              <ol type="a">
+                <li>\( \overline{\text{A} \cup \text{B}} = \overline{\text{A}} \cap \overline{\text{B}} \)</li>
+                <li>\( \overline{\text{A} \cap \text{B}} = \overline{\text{A}} \cup \overline{\text{B}} \)</li>
+              </ol>
+              <li>Special Distributive Laws</li>
+              <ol type="a">
+                <li>\( \text{A} - ( \text{B} \cap \text{C} ) = ( \text{A} - \text{B} ) \cup ( \text{A} - \text{C} ) \)</li>
+                <li>\( \text{A} - ( \text{B} \cup \text{C} ) = ( \text{A} - \text{B} ) \cap ( \text{A} - \text{C} ) \)</li>
+                <li>\( \text{A} \cap ( \text{B} - \text{C} ) = ( \text{A} \cap \text{B} ) - ( \text{A} - \text{C} ) \)</li>
+              </ol>
+            </ol>
+          </td>
+        </tr>
+      </table>
+      <p><hr></p>
+      <p><b style="background-color: yellow;">#Review of Real Numbers</b></p>
+      <table>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Natural Numbers</b></td>
+          <td>The simplest and the most familiar unending chain of consecutive numbers are known as natural numbers. They are also known as counting numbers. The set of natural numbers is denoted by \( \text{N} \).</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Integers</b></td>
+          <td>The set of natural numbers together with their negatives including zero are known as Integers. The set of integers is denoted by \( \text{Z} \).<br>
+            \( \text{Z}^{-} \) &#8594; Negative Integer<br>
+            \( \text{Z}^0 \) &#8594; Neutral Integer (Zero)<br>
+            \( \text{Z}^{+} \) &#8594; Positive Integer
+          </td>
+        </tr>
+      </table>
 
   <h2>Chapter 2 - Functions</h2>
   <div>
