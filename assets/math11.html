@@ -437,7 +437,7 @@
           </td>
         </tr>
         <tr>
-          <td style="vertical-align: top; text-align: left; width: 160px;"><b>Symmetric Difference</b></td>
+          <td style="vertical-align: top; text-align: left; width: 156px;"><b>Symmetric Difference</b></td>
           <td>The union of the differences \( \text{A} - \text{B} \) and \( \text{B} - \text{A} \) of two sets \( \text{A} \) and \( \text{B} \) is the called the symmetric difference of \( \text{A} \) and \( \text{B} \) i.e. \( \text{A } \Delta \text{ B} = ( \text{A} - \text{B} ) \cup ( \text{B} - \text{A} ) \).<br>
             Symbolically, \( \text{A } \Delta \text{ B} = \{ x: x \in (\text{A} - \text{B}) \) or  \( x \in (\text{B} - \text{A}) \)<br>
             \( x \in (\text{A } \Delta \text{ B}) \Rightarrow x \in \text{A} \) or \( x \in \text{B} \) but \( x \not\in (\text{A} \cap \text{B}) \)
@@ -529,8 +529,152 @@
             \( \text{Z}^{+} \) &#8594; Positive Integer
           </td>
         </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Rational Numbers</b></td>
+          <td>A number in the form of \( \frac{p}{q} \) where \( p \) and \( q \) are integers and \( q \neq  0 \), is known as a rational number. The set of rational numbers is denoted by \( Q \).</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left; width: 140px;"><b>Irrational Numbers</b></td>
+          <td>Numbers which are not rational numebrs are known as irrational numbers. That is, a number which cannot be expressed in the form of \( \frac{p}{q} \) where \( p \) and \( q \) are integers and \( q \neq 0 \), is known as an irrational number. The set of irrational numbers is denoted by \( \overline{\text{Q}} \).</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Real Numbers</b></td>
+          <td>The union of the set of rational and irrational numbers is known as real numbers. The set of real numbers is denoted by \( \text{R} \).</td>
+        </tr>
       </table>
-
+      <p><hr></p>
+      <p style="margin-bottom: 5px;"><b>Classification of Real Numbers</b></p>
+      <div style="border: 0px;">
+        <img src="images/real-numbers.png" width="555px">
+      </div>
+      <p>The family members of the real numbers have the following set relation:	\( \text{N} \subset \text{Z} \subset \text{Q} \subset \text{R} \)</p>
+      <p><b style="background-color: yellow;">#Properties of Real Numbers</b></p>
+      <ol style="list-style: none;">
+        <li>
+          <p><b>1. Closure property:</b></p>
+          <p>\( \text{If } a, b \in \text{R} \text{ then} \left\{ \begin{array}{l} a + b \in \text{R} \\ ab \in \text{R} \end{array} \right. \)</p>
+        </li>
+        <li>
+          <p><b>2. Commutative property:</b><br></p>
+          <p>\( \text{If } a, b \in \text{R} \text{ then} \left\{ \begin{array}{l} a + b = b + a \\ ab = ba \end{array} \right. \)</p>
+        </li>
+        <li>
+          <p><b>3. Associative property:</b></p>
+          <p>\( \text{If } a, b, c \in \text{R} \text{ then} \left\{ \begin{array}{l} a + (b + c) = (a + b) + c \\ a(bc) = (ab)c \end{array} \right.\)</p>
+        </li>
+        <li>
+          <p><b>4. Identity elements:</b></p>
+          <p>\( \text{For every } a \in  \text{R} \left\{ \begin{array}{l} a + 0 = 0 + a = a \\ a \cdot 1 = 1 \cdot a = a \end{array} \right. \)</p>
+          <p>Hence, 0 and 1 are the additive and multiplicative identity of \( a \).</p>
+        </li>
+        <li>
+          <p><b>5. Inverse elements:</b></p>
+          <p>\( \text{For every} a \in \text{R} \left\{ \begin{array}{l} a + (-a) = (-a) + a = 0 \\ a \cdot a^{-1} = a^{-1} \cdot a = 1, (a \neq 0) \end{array} \right.\)</p>
+          <p>Hence, \( (-a) \) and \( a^{-1} \) are the additive and multiplicative inverse of \( a \).</p>
+        </li>
+      </ol>
+      <p><b style="background-color: yellow;">#Order Property</b></p>
+      <p>The most basic order peroperty are:</p>
+      <ul>
+        <li>A real number \( a \) is said to be positive if \( a > 0 \) and negative if \( a < 0 \).</li>
+        <li>If \( a, b \in \text{R}, a > 0, b > 0 \) then \( ab > 0 \).</li>
+      </ul>
+      <p>Besides the above property, we have the following properties as well:</p>
+      <ol style="list-style: none;">
+        <li>
+          <p><b>1. The Axiom of Trichotomy (Trichotomy property):</b></p>
+          <p>If \( a \) and \( b \) are two real numbers then one and only of the following relations is holded</p>
+          <p>\( a < b, a = b, a > b \)</b></p>
+        </li>
+        <li>
+          <p><b>2. The Axiom of Transitivity (Transitivity property):</b></p>
+          <p>\( \text{If } a, b, c \in \text{R} \text{ then} \left\{ \begin{array}{l} a > b, b > c \Rightarrow a > c \\ a < b, b < c \Rightarrow a < c \end{array} \right.\)</p>
+        </li>
+        <li>
+          <p><b>3. Addition property</b></p>
+          <p>\( \text{If } a, b, c \in \text{R} \text{ then} \left\{ \begin{array}{l} a > b \Rightarrow a + c > b + c \\ a < b \Rightarrow a + c < b + c \end{array} \right.\)</p>
+        </li>
+        <li>
+          <p><b>4. Multiplication property</b></p>
+          <p>\( \text{If } a, b, c \in \text{R} \text{ then} \left\{ \begin{array}{l} a > b \xrightarrow{\times \text{ } c, \text{ } (c \text{ } > \text{ } 0)} ac > bc \\ a > b \xrightarrow{\times \text{ } c, \text{ } (c \text{ } < \text{ } 0)} ac < bc \\ a < b \xrightarrow{\times \text{ } c, \text{ } (c \text{ } > \text{ } 0)} ac < bc \\ a < b \xrightarrow{\times \text{ } c, \text{ } (c \text{ } < \text{ } 0)} ac > bc \end{array} \right.\)</p>
+        </li>
+      </ol>
+      <p><b style="background-color: yellow;">#Representation of a Real Number in a Real Number Line</b></p>
+      <p>The straight line in which the real numbers are plotted by means of the points is called the real number line. Thus, any point on the real number line is said to be a real number. Since the real numbers are categorized into two types: Rational and Irrational numbers, broadly we have the following representations of real number:</p>
+      <p style="margin-bottom: 5px;"><b>Representation of a rational number in a real number line</b></p>
+      <ol>
+        <li>Draw a horizontal straight line and mark a point as 0 (origin).</li>
+        <li>Mark 1 unit to the right of 0.</li>
+        <li>If the rational number is \( \frac{p}{q} \) then divide the unit interval into \( q \) equal parts.</li>
+        <li>From 0, move \( p \) parts to the right (if positive) or left (if negative).</li>
+        <li>The obtained point represents the given rational number.</li>
+      </ol>
+      <p style="margin-bottom: 5px;"><b>Representation of an irrational number in a real number line</b></p>
+      <div style="display: flex; border: 0px;">
+        <div style="border: 0px;">
+          <ol>
+            <li>Draw a number line and take \( \text{OA} \)= 1 unit.</li>
+            <li>At point \( A \), draw a perpendicular \( \text{AB} \) = 1 unit.</li>
+            <li>Join \( \text{OB} \), By Pythagoras' theorem: \( \text{OB} = \sqrt{2} \).</li>
+            <li>Point \( \text{B} \) represents \( \sqrt{2} \) on the real number line.</li>
+            <li>Repeat step(2) at the new point obtained in step(4) for \( \sqrt{3}, \sqrt{4}, \sqrt{5} \), etc.</li>
+          </ol>
+        </div>
+        <div style="border: 0px;">
+          <img src="images/irrational-number.png" width="260px">
+        </div>
+      </div>
+      <p style="margin-bottom: 5px;"><b>Inequality</b></p>
+      <p>An inequality is a relation comparing two expressions that are not strictly equal, using symbols like < (less than), > (greater than), \( \leq \) (less than or equal to), or \( \geq \) (greater than). They define a range of possible values rather than a single solution.</p>
+      <p><b style="background-color: yellow;">#Interval</b></p>
+      <p>The set of points on the real number line between \( a \) and \( b \), is known as an interval. An interval is denoted by \( I \). An interval may or may not include the end points. On this basis, there are 4 different types of intervals:</p>
+      <table>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Open interval</b></td>
+          <td>An interval not containing both the end points \( a \) and \( b \), is known as an open interval. Symbolically, \( (a, b) = \{ x: a < x < b \} \)</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Closed interval</b></td>
+          <td>An interval containing both the end points \( a \) and \( b \), is known as a closed interval. Symbolically, \( [a, b] = \{ x: a \leq x \leq b \} \)</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left;"><b>Left open interval</b></td>
+          <td>An interval not containing the end point \( a \) but containing the end point \( b \), is known as the left open interval. Symbolically, \( (a, b] = \{ x: a < x \leq b \} \)</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; text-align: left; width: 140px;"><b>Right open interval</b></td>
+          <td>An interval containing the end point \( a \) and not containing the end point \( b \), is known as the right open interval. Symbolically, \( [a, b) = \{ x: a \leq x < b \} \)</td>
+        </tr>
+      </table>
+      <p><hr></p>
+      <p><b style="background-color: yellow;">#Absolute Value</b></p>
+      <p>The absolute value (or modulus) of a number \( x \), is a non-negative real number defined by</p>
+      <p>\( |x| = \left\{ \begin{array}{l} -x & \text{if } x < 0 \\ x & \text{if } x \geq 0 \end{array} \right. \)</p>
+      <p>Geometrically, \( |x| \) is the distance from the origin to the number \( x \).<br>
+        Moreover, the distance between any two numbers \( a \) and \( b \) on the real number line is \( |a - b| = |b - a| \).
+      </p>
+      <p style="margin-bottom: 5px;"><b>Properties of (Absolute Values/Modulus)</b></p>
+      <ol>
+        <li>Unary Property</li>
+        <ol type="a">
+          <li>\( |x| \geq 0 \)</li>
+          <li>\( |x| \geq x \) and \( |x| \geq -x \)</li>
+          <li>\( -|x| \leq x \leq |x| \)</li>
+        </ol>
+        <li>Binary Property</li>
+        <ol type="a">
+          <li>\( |x + y| \leq |x| + |y| \)</li>
+          <li>\( |x - y| \geq |x| - |y| \)</li>
+          <li>\( |xy| = |x||y| \)</li>
+          <li>\( \left| \frac{x}{y} \right| = \frac{|x|}{|y|} \)</li>
+        </ol>
+        <li>Omission Property</li>
+        <ol type="a">
+          <li>If \( x \in \text{R} \) and \( a \) is any positive real number then \( |x| \leq a \Leftrightarrow -a \leq x \leq a \)</li>
+        </ol>
+      </ol>
+    <p><hr></p>
+       
   <h2>Chapter 2 - Functions</h2>
   <div>
     <ol>
